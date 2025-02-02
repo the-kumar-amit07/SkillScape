@@ -34,7 +34,7 @@
                 $fetchProfile = $selectProfile->fetch(PDO::FETCH_ASSOC);
             ?>
 
-            <img src="../uploadFiles/<?php$fetchProfile['image'];?>" alt="avatar">
+            <img src="../uploadFiles/<?php $fetchProfile['image'];?>" alt="avatar">
             <h3><?php $fetchProfile['name'];?></h3>
             <span><?php $fetchProfile['profession'];?></span>
 
