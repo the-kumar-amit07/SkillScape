@@ -74,3 +74,8 @@ main {
     width: 100%;
     padding: 1rem;
 }
+
+.card-container{
+    background: #f4f4f4;
+    padding: 2rem;
+}
