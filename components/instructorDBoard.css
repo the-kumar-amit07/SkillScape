@@ -9,6 +9,7 @@
 
 body {
     display: flex;
+    background: #c4c4c4;
 }
 
 main {
@@ -268,6 +269,53 @@ tfoot{
 tfoot td{
     padding: 15px;
     color: #f4f4f4;
+}
+
+
+
+@media (max-width: 768px) {
+    /* Make sure body uses column layout on smaller screens */
+    body {
+        flex-direction: column;
+    }
+
+    /* Ensure main section takes full width */
+    main {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    /* Cards should adjust for small screens */
+    .card-wrapper {
+        justify-content: center; /* Center the cards */
+    }
+
+    .data-card {
+        width: 100%; /* Make cards full width */
+        max-width: 320px; /* Limit width for better alignment */
+    }
+
+    /* Header should adjust */
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 1rem;
+    }
+
+    .user-profile {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    /* Make table scrollable on smaller screens */
+    .table-container {
+        overflow-x: auto;
+    }
+
+    table {
+        font-size: 13px;
+        min-width: 600px; /* Ensure table does not break */
+    }
 }
 
 
