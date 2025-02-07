@@ -163,39 +163,31 @@ header {
     font-family: 'Inter', sans-serif;
 }
 
-.borderLeftDarkblue {
-    border-left: 5px solid #0056b3;
-}
 
-.borderLeftDarkGreen {
-    border-left: 5px solid #218838;
-}
 
-.borderLeftDarkRed {
-    border-left: 5px solid #c82333;
-}
-
-.borderLeftDarkYellow {
-    border-left: 5px solid #ffae42;
-}
-
+/* card bg color */
 .lightBlue {
     background: #007bff;
+    border-left: 5px solid #0056b3;
 }
 
 .lightGreen {
     background: #28a745;
+    border-left: 5px solid #218838;
 }
 
 .lightRed {
     background: #dc3545;
+    border-left: 5px solid #b81f2e;
 }
 
 .lightYellow {
     background: #ffc107;
+    border-left: 5px solid #ffae42;
 }
 
 
+/* icon bg color */
 .deepBlue {
     background: #0056b3;
 }
