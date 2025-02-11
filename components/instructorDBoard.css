@@ -80,6 +80,28 @@ header {
     transform: scale(1.2);
 }
 
+.theme-toggle {
+    background: #f4f4f4;
+    color: #222;
+    border: 2px solid #444;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dark-mode .theme-toggle {
+    background: #222;
+    color: #f4f4f4;
+    border-color: #ababab;
+}
+
 
 
 
@@ -265,29 +287,68 @@ tfoot td{
 
 
 
+/*Dark mode */
+.dark-mode {
+    background: #000000 !important;
+    color: #f4f4f4 !important;
+}
+
+.dark-mode main {
+    background: #000000 !important;
+}
+
+.dark-mode header {
+    background: #292929!important;
+    color: #f4f4f4 !important;
+}
+
+.dark-mode .header-title {
+    color: #f4f4f4 !important;
+}
+
+.dark-mode .card-container {
+    background: #292929;
+}
+
+.dark-mode .table-section {
+    background: #292929 !important;
+}
+.dark-mode tbody {
+    background: #292929 !important;
+    color: #f4f4f4 !important;
+}
+
+.dark-mode td {
+    color: #ffffff !important;
+
+}
+
+.dark-mode tr:nth-child(even) {
+    background: #696969;
+}
+
 @media (max-width: 768px) {
-    /* Make sure body uses column layout on smaller screens */
+    
     body {
         flex-direction: column;
     }
 
-    /* Ensure main section takes full width */
+
     main {
         width: 100%;
         padding: 0.5rem;
     }
 
-    /* Cards should adjust for small screens */
     .card-wrapper {
-        justify-content: center; /* Center the cards */
+        justify-content: center; 
     }
 
     .data-card {
-        width: 100%; /* Make cards full width */
-        max-width: 320px; /* Limit width for better alignment */
+        width: 100%; 
+        max-width: 320px; 
     }
 
-    /* Header should adjust */
+    
     header {
         flex-direction: column;
         text-align: center;
@@ -295,18 +356,23 @@ tfoot td{
     }
 
     .user-profile {
-        flex-direction: column;
+        flex-direction: row;
         gap: 0.5rem;
     }
 
-    /* Make table scrollable on smaller screens */
+    .theme-toggle span {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    
     .table-container {
         overflow-x: auto;
     }
 
     table {
         font-size: 13px;
-        min-width: 600px; /* Ensure table does not break */
+        min-width: 600px;
     }
 }
 

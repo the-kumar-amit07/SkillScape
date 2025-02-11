@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +8,21 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
     <link rel="stylesheet" href="instructorDBoard.css">
+
 </head>
+
 <body>
-    <main >
+    <main>
         <header>
             <div class="header-title">
                 <span>Dashboard</span>
                 <h2>Hi,Instructor</h2>
             </div>
             <div class="user-profile">
+                <button id="themeSwitch" class="theme-toggle">
+                    <span class="material-symbols-outlined">dark_mode</span>
+                </button>
+
                 <div class="search-bar">
                     <i class="material-symbols-outlined">search</i>
                     <input type="text" placeholder="Search">
@@ -132,6 +139,11 @@
             </div>
         </section>
     </main>
+
 </body>
+
+<script src="themeScript.js"></script>
+
 </html>
+
 
