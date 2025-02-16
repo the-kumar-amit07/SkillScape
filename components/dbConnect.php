@@ -3,16 +3,18 @@
     $userName = "root";
     $password = "";
 
-    $connectDB = new PDO($dbName, $userName, $password);
-
-    if (!$connectDB) { 
-        echo "Database connected successfully";
-    } else {
+    try {
+        $connectDB = new PDO($dbName, $userName, $password);
+    } catch (\Throwable $th) {
         echo "Database connection failed";
     }
 
+    // if ($connectDB) { 
+    //     echo "Database connected successfully";
+    // } 
+
     function uniqueId(){
-        $str = "1234567890abcdefghijklmnopqrstuvwxyz";
+        $str = "1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
         $rand = array();
         $length = strlen($str) - 1;
         for ($i=0; $i < 20; $i++) { 
