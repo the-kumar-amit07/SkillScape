@@ -38,7 +38,7 @@
                 $fetchProfile = $selectProfile->fetch(PDO::FETCH_ASSOC);
             ?>
 
-            <img src="../uploadFiles/<?= htmlspecialchars($fetchProfile['avatar']) ?>" alt="User Avatar">
+            <img src="../bucket/<?= htmlspecialchars($fetchProfile['avatar']) ?>" alt="User Avatar">
             <h3><?= htmlspecialchars($fetchProfile['name']) ?></h3>
             <span><?= htmlspecialchars($fetchProfile['profession']) ?></span>
 
@@ -49,7 +49,7 @@
 
             <?php } else { ?>
             <div>
-                <div class="close-btn material-symbols-outlined" id="close_toggle">close</div>
+                <!-- <div class="close-btn material-symbols-outlined" id="close_toggle">close</div> -->
                 <h3>Please Login or Register</h3>
                 <div id="profile-btn">
                     <a href="login.php" class="btn">Log In</a>
@@ -76,35 +76,29 @@
 </aside>
 
 <script>
+    document.addEventListener("DOMContentLoaded", function () {
+
     const sidebar = document.querySelector('.sidebar');
     const menu_btn = document.querySelector('#menu_btn');
     const close_sidebar = document.querySelector('#close_sidebar');
-
     const user_btn = document.querySelector('#user_btn');
     const profile = document.querySelector('.profile');
+    const close_toggle = document.querySelector('#close_toggle')
 
 
     // Profile Toggle Button
-    user_btn.addEventListener('click',()=> {
+    user_btn.addEventListener('click', () => {
         profile.classList.toggle('active');
-    })
+    });
 
-    document.querySelector('#close_toggle').addEventListener('click',()=>{
-        profile.classList.remove('active');
-    })
-
-    // document.addEventListener('click',(event) => {
-    //     if (!profile.contains(event.target) && event.target !== user_btn) {
-    //         profile.classList.remove('active');
-    //     }
-    // })
 
     // Sidebar Toggle Button 
-    menu_btn.addEventListener('click',()=>{
+    menu_btn.addEventListener("click", function () {
         sidebar.classList.add('active');
-    })
+    });
 
-    close_sidebar.addEventListener('click',()=>{
+    close_sidebar.addEventListener('click', function () {
         sidebar.classList.remove('active');
-    })
+    });
+});
 </script>

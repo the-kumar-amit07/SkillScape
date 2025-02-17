@@ -1,14 +1,23 @@
 <?php
+session_start();
 include '../components/dbConnect.php';
 
-if (isset($_COOKIE['tutor_id'])) {
-    $tutor_id = $_COOKIE['tutor_id'];
-} else {
+/*For $_COOKIE*/
+// if (isset($_COOKIE['tutor_id'])) {
+//     $tutor_id = $_COOKIE['tutor_id'];
+// } else {
     
-    $tutor_id = '';
-    header('Location: logIn.php');
-}
+//     $tutor_id = '';
+//     header('Location: logIn.php');
+// }
 
+/*For $_SESSION*/
+if (isset($_SESSION['id'])) {
+    $tutor_id = $_SESSION['id'];
+} else {
+    header('Location: logIn.php');
+    // $tutor_id = '';
+}
 ?>
 
 <style>
