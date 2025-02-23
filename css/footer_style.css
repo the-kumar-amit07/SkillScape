@@ -1,0 +1,175 @@
+/*  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+} */
+
+.newsletter {
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    background: #af46e9;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.newsletter .container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Left Side - Subscription Form */
+.newsletter .box {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+}
+
+.newsletter h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.newsletter p {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.newsletter form {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.newsletter input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    outline: none;
+}
+
+.newsletter button {
+    padding: 12px 20px;
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.newsletter button:hover {
+    background-color: #ffdb4d;
+}
+
+/* Counter Section */
+.newsletter .box-counter {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Equal Counter Box */
+.counter-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Footer Styling */
+footer {
+    height: 50vh;
+    background: #222;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+footer .box {
+    flex: 1;
+    min-width: 250px;
+    max-width: 400px;
+}
+
+footer h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: #ffcc00;
+}
+
+footer p {
+    font-size: 14px;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .newsletter {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .newsletter .container {
+        flex-direction: column;
+    }
+
+    .newsletter .box {
+        width: 100%;
+    }
+
+    .newsletter form {
+        flex-direction: column;
+    }
+
+    .newsletter input,
+    .newsletter button {
+        width: 100%;
+    }
+
+    .box-counter {
+        width: 100%;
+    }
+
+    footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+}

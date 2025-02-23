@@ -18,10 +18,30 @@ if (isset($_SESSION['id'])) {
     header('Location: logIn.php');
     // $tutor_id = '';
 }
+
+$selectContent = $connectDB->prepare(("SELECT * FROM `content` WHERE `tutor_id` = ? "));
+$selectContent->execute([$tutor_id]);
+$totalContent = $selectContent->rowCount();
+
+$selectPlaylist = $connectDB->prepare(("SELECT * FROM `playlist` WHERE `tutor_id` = ? "));
+$selectPlaylist->execute([$tutor_id]);
+$totalPlaylist = $selectPlaylist->rowCount();
+
+$selectComment = $connectDB->prepare(("SELECT * FROM `comments` WHERE `tutor_id` = ? "));
+$selectComment->execute([$tutor_id]);
+$totalComment = $selectComment->rowCount();
+
+$selectLike = $connectDB->prepare(("SELECT * FROM `likes` WHERE `tutor_id` = ? "));
+$selectLike->execute([$tutor_id]);
+$totalLike = $selectLike->rowCount();
+
+
 ?>
 
 <style>
-    <?php include '../css/admin_style.css'; ?>
+    <?php include '../css/navbar_style.css'; ?>
+    <?php include '../css/dashboard_style.css'; ?>
+    <?php include '../css/footer_style.css'; ?>
 </style>
 
 <!DOCTYPE html>
@@ -34,5 +54,44 @@ if (isset($_SESSION['id'])) {
 </head>
 <body>
     <?php include '../components/navbar.php'; ?>
+    <section class="dashboard">
+        <h1 class="heading">Dashboard</h1>
+        <div class="container">
+            <div class="box">
+                <h3>Welcome</h3>
+                <p><?= $fetchProfile['name'];?></p>
+                <a href="profile.php" class="btn">view profile</a>
+            </div>
+            <div class="box">
+                <h3><?= $totalContent;?></h3>
+                <p>Total Courses</p>
+                <a href="addCourse.php" class="btn">add new course</a>
+            </div>
+            <div class="box">
+                <h3><?= $totalPlaylist;?></h3>
+                <p>Total Playlist</p>
+                <a href="addCourse.php" class="btn">add new playlist</a>
+            </div>
+            <div class="box">
+                <h3><?= $totalLike;?></h3>
+                <p>Total Likes</p>
+                <a href="course.php" class="btn">view courses</a>
+            </div>
+            <div class="box">
+                <h3><?= $totalComment;?></h3>
+                <p>Total Comments</p>
+                <a href="comments.php" class="btn">view comments</a>
+            </div>
+            <div class="box">
+                <h3>Quick Start</h3>
+                <div class="auth-btn">
+                <a href="logIn.php" class="btn">Login Now</a>
+                <a href="register.php" class="btn">Register Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <?php include '../components/footer.php'; ?>
+    <script type="text/javascript" src="../js/navbar.js"></script>
 </body>
 </html>

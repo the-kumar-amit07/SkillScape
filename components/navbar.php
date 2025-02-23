@@ -1,3 +1,4 @@
+
 <?php
     if (isset($message)) {
         foreach ($message as $msg) { // Avoid overwriting variable
@@ -11,8 +12,8 @@
     }
 ?>
 
-<header>
-    <section>
+<div class="header">
+    <div class="section" >
         <a href="dashboard.php">
             <img src="../images/skillscape-high-resolution-logo-transparent.png" alt="SkillScape Logo" width="100">
         </a>
@@ -58,11 +59,10 @@
             </div>
             <?php } ?>
         </div>
-    </section>
-</header>
+    </div>
+</div>
 
-<!-- sidebar -->
-<aside>
+<div class="aside">
     <div class="sidebar">
         <div class="close-btn material-symbols-outlined" id="close_sidebar">close</div>
         <ul>
@@ -73,32 +73,5 @@
             <li><a href="settings.php">Settings</a></li>
         </ul>
     </div>
-</aside>
+</div>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-
-    const sidebar = document.querySelector('.sidebar');
-    const menu_btn = document.querySelector('#menu_btn');
-    const close_sidebar = document.querySelector('#close_sidebar');
-    const user_btn = document.querySelector('#user_btn');
-    const profile = document.querySelector('.profile');
-    const close_toggle = document.querySelector('#close_toggle')
-
-
-    // Profile Toggle Button
-    user_btn.addEventListener('click', () => {
-        profile.classList.toggle('active');
-    });
-
-
-    // Sidebar Toggle Button 
-    menu_btn.addEventListener("click", function () {
-        sidebar.classList.add('active');
-    });
-
-    close_sidebar.addEventListener('click', function () {
-        sidebar.classList.remove('active');
-    });
-});
-</script>

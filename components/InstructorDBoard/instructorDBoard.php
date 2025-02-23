@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Instructor Dashboard</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
     <link rel="stylesheet" href="instructorDBoard.css">
@@ -34,43 +34,43 @@
         <section class="card-container">
             <h3 class="main-title">Todays data</h3>
             <div class="card-wrapper">
-                <a href="courses.html" class="data-card lightBlue ">
+                <a href="courses.html" class="data-card ">
                     <div class="card-header">
                         <div class="amount">
                             <span class="title">Courses Published</span>
                             <span class="amount-value">6</span>
                         </div>
-                        <i class="material-symbols-outlined deepBlue">library_books</i>
+                        <i class="material-symbols-outlined">library_books</i>
                     </div>
                     <span class="card-detail">New this month: 2</span>
                 </a>
-                <a href="courses.html" class="data-card lightGreen ">
+                <a href="courses.html" class="data-card">
                     <div class="card-header">
                         <div class="amount">
                             <span class="title">Students Enrolled</span>
                             <span class="amount-value">800</span>
                         </div>
-                        <i class="material-symbols-outlined deepGreen">group</i>
+                        <i class="material-symbols-outlined">group</i>
                     </div>
                     <span class="card-detail">Active this month: 300</span>
                 </a>
-                <a href="courses.html" class="data-card lightRed ">
+                <a href="courses.html" class="data-card">
                     <div class="card-header">
                         <div class="amount">
                             <span class="title">Total Earnings</span>
                             <span class="amount-value">$80000</span>
                         </div>
-                        <i class="material-symbols-outlined deepRed">money_bag</i>
+                        <i class="material-symbols-outlined">money_bag</i>
                     </div>
                     <span class="card-detail">Last 30 days: $3,500</span>
                 </a>
-                <a href="courses.html" class="data-card lightYellow">
+                <a href="courses.html" class="data-card">
                     <div class="card-header">
                         <div class="amount">
                             <span class="title">Total Quizzes</span>
                             <span class="amount-value">80</span>
                         </div>
-                        <i class="material-symbols-outlined deepYellow">quiz</i>
+                        <i class="material-symbols-outlined">quiz</i>
                     </div>
                     <span class="card-detail">Avg. Score: 85%</span>
                 </a>

@@ -1,4 +1,4 @@
-/* Reset default styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,8 +6,8 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* Header Section */
-header {
+
+.header {
     background: #fff;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     padding: 10px 5%;
@@ -21,7 +21,7 @@ header {
 }
 
 /* Header container */
-header section {
+.header .section {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -29,16 +29,16 @@ header section {
 }
 
 /* Logo */
-header a img {
+.header a img {
     width: 120px;
     transition: transform 0.3s ease;
 }
 
-header a img:hover {
+.header a img:hover {
     transform: scale(1.05);
 }
 
-/* Search Form */
+/* Search  */
 .search-form {
     display: flex;
     align-items: center;
@@ -58,7 +58,7 @@ header a img:hover {
 }
 
 .search-form button {
-    background: #007bff;
+    background: #af46e9;
     border: none;
     color: white;
     padding: 8px 15px;
@@ -68,10 +68,10 @@ header a img:hover {
 }
 
 .search-form button:hover {
-    background: #0056b3;
+    background: #d499f4;
 }
 
-/* Icons */
+
 .icons {
     display: flex;
     gap: 15px;
@@ -93,7 +93,7 @@ header a img:hover {
     display: none;
 }
 
-/* Profile Section */
+/* Profile Sec */
 .profile {
     position: absolute;
     top: 70px;
@@ -127,7 +127,7 @@ header a img:hover {
     color: gray;
 }
 
-/* Profile Buttons */
+
 #profile-btn {
     margin-top: 10px;
 }
@@ -135,7 +135,7 @@ header a img:hover {
 #profile-btn .btn {
     display: block;
     text-decoration: none;
-    background: #007bff;
+    background: #af46e9;
     color: white;
     padding: 8px 15px;
     margin: 5px 0;
@@ -144,7 +144,7 @@ header a img:hover {
 }
 
 #profile-btn .btn:hover {
-    background: #0056b3;
+    background: #d499f4;
 }
 
 .sidebar {
@@ -189,7 +189,7 @@ header a img:hover {
 }
 
 .sidebar ul li a:hover {
-    color: #ff9800;
+    color: #d499f4;
 }
 
 .close-btn {
@@ -203,10 +203,7 @@ header a img:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    header {
     
-    }
-
     .search-form input {
         width: 150px;
     }
