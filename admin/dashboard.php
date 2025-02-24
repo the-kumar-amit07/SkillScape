@@ -35,22 +35,20 @@ $selectLike = $connectDB->prepare(("SELECT * FROM `likes` WHERE `tutor_id` = ? "
 $selectLike->execute([$tutor_id]);
 $totalLike = $selectLike->rowCount();
 
-
 ?>
 
-<style>
-    <?php include '../css/navbar_style.css'; ?>
-    <?php include '../css/dashboard_style.css'; ?>
-    <?php include '../css/footer_style.css'; ?>
-</style>
+
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dashboard</title>
+    <title>Dashboard</title>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="../css/navbar_style.css">
+    <link rel="stylesheet" href="../css/dashboard_style.css">
+    <link rel="stylesheet" href="../css/footer_style.css">
 </head>
 <body>
     <?php include '../components/navbar.php'; ?>

@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", function () {
 
     const sidebar = document.querySelector('.sidebar');
     const menu_btn = document.querySelector('#menu_btn');
