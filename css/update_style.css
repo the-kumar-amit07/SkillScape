@@ -6,7 +6,7 @@
     font-family: 'Arial', sans-serif;
 }
 
-body {
+.main-container {
     background: #f4f4f4;
     display: flex;
     flex-direction: column;
@@ -14,19 +14,7 @@ body {
     justify-content: center;
     height: 100vh;
 }
-
-/* Header */
-.form-logo {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.form-logo img {
-    width: 150px;
-}
-
-/* Login Container */
-.signup-container {
+.update-container {
     background: white;
     padding: 30px;
     width: 400px;
@@ -35,41 +23,41 @@ body {
     text-align: center;
 }
 
-.signup-container h3 {
+.update-container h3 {
     color: #333;
     margin-bottom: 20px;
 }
 
-/* Form Styles */
-.signup-container form {
+
+.update-container form {
     display: flex;
     flex-direction: column;
 }
 
-.signup-container section {
+.update-container section {
     margin-bottom: 15px;
 }
 
-.signup-container p {
+.update-container p {
     font-size: 14px;
     font-weight: bold;
     margin-bottom: 5px;
     color: #333;
 }
 
-.signup-container p a{
+.update-container p a{
     text-decoration: none;
 }
 
-.signup-container p a:hover{
+.update-container p a:hover{
     text-decoration: underline;
 }
 
-.signup-container span {
+.update-container span {
     color: red;
 }
 
-.signup-container .box {
+.update-container .box {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
@@ -78,7 +66,7 @@ body {
 }
 
 /* Button */
-.signup-container .btn {
+.update-container .btn {
     background: #af46e9;
     color: white;
     padding: 10px;
@@ -88,7 +76,7 @@ body {
     font-size: 16px;
 }
 
-.signup-container .btn:hover {
+.update-container .btn:hover {
     background: #d499f4;
 }
 

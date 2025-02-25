@@ -84,11 +84,12 @@ if(isset($_POST['register'])) {
         }
     ?>
 
-    <header>
+    <div class="container">
+    <div class="form-logo">
             <img src="../images/skillscape-high-resolution-logo-transparent.png" alt="SkillScape Logo" width="100">
-    </header>
+    </div>
     
-        <main class="login-container">
+        <main class="signup-container">
             <form action="" method="post" enctype="multipart/form-data">
                 <h3>register now</h3>
                 <section>
@@ -121,5 +122,6 @@ if(isset($_POST['register'])) {
                 <input type="submit" name="register" class="btn" value="Register">
             </form>
         </main>
+    </div>
 </body>
 </html>

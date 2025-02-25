@@ -12,8 +12,8 @@
     }
 ?>
 
-<div class="header">
-    <div class="section" >
+<div class="nav-header">
+    <div class="nav-section" >
         <a href="dashboard.php">
             <img src="../images/skillscape-high-resolution-logo-transparent.png" alt="SkillScape Logo" width="100">
         </a>
