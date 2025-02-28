@@ -68,7 +68,7 @@ $totalLike = $selectLike->rowCount();
             <div class="box">
                 <h3><?= $totalPlaylist;?></h3>
                 <p>Total Playlist</p>
-                <a href="addCourse.php" class="btn">add new playlist</a>
+                <a href="addCoursePlaylist.php" class="btn">add new playlist</a>
             </div>
             <div class="box">
                 <h3><?= $totalLike;?></h3>

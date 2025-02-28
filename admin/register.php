@@ -35,9 +35,9 @@ if(isset($_POST['register'])) {
             $imgFolderPath = '../bucket/'.$rename;
 
             $selectTutor = $connectDB->prepare("SELECT * FROM `instructor` WHERE `email` = ? ");
-            $selectTutor->execute([$email]);
+            $selectTutor->execute([$email]); 
 
-            if ($selectTutor->rowCount() > 0) {
+            if ($selectTutor->rowCount() > 0) {  //number of rows affected query 
                 $message[] = 'Email already exists';
             } else {
                 $insertTutor = $connectDB->prepare(("INSERT INTO `instructor` (id, name, profession, email, password, avatar ) VALUES (?,?,?,?,?,?)"));

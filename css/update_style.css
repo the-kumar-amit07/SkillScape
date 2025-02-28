@@ -1,4 +1,4 @@
-/* Global Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -65,7 +65,7 @@
     border-radius: 5px;
 }
 
-/* Button */
+
 .update-container .btn {
     background: #af46e9;
     color: white;
@@ -80,7 +80,7 @@
     background: #d499f4;
 }
 
-/* Message Alert */
+
 .message {
     background: #ffdddd;
     padding: 10px;
@@ -96,7 +96,7 @@
     color: red;
 }
 
-/* Responsive Design */
+
 @media (max-width: 500px) {
     .signup-container {
         width: 90%;

@@ -45,7 +45,7 @@
 
             <div id="profile-btn">
                 <a href="profile.php" class="btn">View Profile</a>
-                <a href="../components/adminLogout.php" onclick="return confirm('Logout from this website?');" class="btn">Logout</a>
+                <a href="../components/logout.php" onclick="return confirm('Logout from this website?');" class="btn">Logout</a>
             </div>
 
             <?php } else { ?>
