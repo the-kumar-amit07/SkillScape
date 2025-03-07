@@ -29,7 +29,6 @@
             <div id="user_btn" class="material-symbols-outlined">person</div>
         </div>
 
-        <!-- Profile Section style="display: none;" -->
         <div class="profile" >  
             <?php
             $selectProfile = $connectDB->prepare("SELECT * FROM `instructor` WHERE id = ?");
